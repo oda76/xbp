@@ -157,7 +157,7 @@ if choice1 == "1":
              time.sleep(2)
              horror_print("少女「この子がいいの!!!絶対大切にする!!!!」",color="bright_white")
              time.sleep(2)
-             horror_print("---HAPPY END???",color="dim white")
+             horror_print("---HAPPY END???---",color="dim white")
              time.sleep(2)
         
       else:
