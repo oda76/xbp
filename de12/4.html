@@ -14,38 +14,213 @@
              background-attachment: fixed;"></body>
 
 <body class="git-page">
-    <h1>ゲーム作り</h1>
+    <h1>お人形の断捨離</h1>
     
     <div>
-<strong>gitについて</strong><br>
-gitとは<br>
-バージョン管理システムの一つ<br>
-：バージョン管理システムとは、データ保存の中で誰がいつどこを編集したのか詳しい履歴を保存管理できる仕組みのこと<br>
+<strong>ゲーム内容：小さい頃に遊んだお人形を捨てるために奮闘するゲーム</strong><br>
+
+
 <br>
-→つまりgit以外にもバージョン管理システムがある<br>
+<strong>code</strong><br>
+#題名<br>
+console.print(Panel.fit("[bold red]幼い頃に遊んでいたお人形を捨てよう!!![/bold red]", border_style="red"))<br>
+time.sleep(1.5)<br>
 <br>
-数あるバージョン管理システムの中でなぜgitが良いのか<br>
-リポジトリが「分散型」である点→他のバージョン管理システムは「集中型」であるから<br>
-：リポジトリとは、貯蔵庫を意味しデータを保管しておく場所のこと<br>
+#説明<br>
+horror_print("今年大学生になったあなたは一人暮らしのために荷造りをしている。", color="bright_white")<br>
+time.sleep(2)<br>
 <br>
-<strong>「分散型」と「集中型」</strong><br>
+horror_print("「マリアちゃん懐かしいな〜！もう遊ばないから捨てるか」", color="bright_white")<br>
+time.sleep(2)<br>
 <br>
+horror_print("...", color="dim white")<br>
+time.sleep(2)<br>
+<br>
+horror_print("1ヶ月後...",color="bold red")<br>
+time.sleep(1.5)<br>
+<br>
+horror_print("「おかしいな…捨てたはずなのに…」", color="bright_white")<br>
+time.sleep(2)<br>
+<br>
+horror_print("捨てたはずのマリアちゃんが新しい引越し先に居た。",color="bold red")<br>
+time.sleep(2)<br>
+<br>
+#選択肢１<br>
+horror_print("\n選択肢:", color="dim white")<br>
+time.sleep(2)<br>
+horror_print("1.家の近くのゴミ捨て場に行く", color="dim white")<br>
+time.sleep(1.5)<br>
+horror_print("2.遠くの山で燃やす", color="dim white")<br>
+time.sleep(1.5)<br>
+horror_print("3.捨てずに一緒にいる", color="dim white")<br>
+time.sleep(1)<br>
+<br>
+choice1 = input("番号を入力: ")<br>
+<br>
+if choice1 == "1":<br>
+      if choice1 == "1":<br>
+            horror_print("「近くのゴミ捨て場に行こう」",color="bright_white")<br>
+            time.sleep(1)<br>
+            horror_print("ガサッ........",color="bright_white")<br>
+            time.sleep(1)<br>
+            horror_print("----------------------",color="dim white")<br>
+            time.sleep(2)<br>
+            horror_print("「なんで.. なんでいるの..また戻ってきた...」",color="bright_white")<br>
+            time.sleep(2)<br>
+<br>
+             #選択肢2<br>
+            horror_print("\n選択肢:", color="dim white")<br>
+            time.sleep(2)<br>
+            horror_print("1.押し入れにしまっておく",color="dim white")<br>
+            time.sleep(2)<br>
+            horror_print("2.塩で清める",color="dim white")<br>
+            time.sleep(2)<br>
+<br>
+            choice2 = input("番号を入力: ")<br>
+<br>
+      if choice2 == "1":<br>
+            horror_print("「そうだ、押し入れにしまっておこう」",color="bright_white")<br>
+            time.sleep(1)<br>
+            horror_print("あなたはマリアちゃんを押し入れに置いておくことにした。",color="bright_white")<br>
+            time.sleep(1)<br>
+            horror_print("「...遊ンデ 一緒二遊ボウ」",color="dim red")<br>
+            time.sleep(3)<br>
+            horror_print("あなたはマリアちゃんと一緒に過ごすにつれて違和感を感じるようになった。何に対しても悲観的になっていったのだ。",color="bright_white")<br>
+            time.sleep(1)<br>
+            horror_print("次第に大学へも行かなくなった。",color="bright_white")<br>
+            time.sleep(1)<br>
+            horror_print("⚪︎月▲日アパートの一室から女子大学生の遺体が見つかった。",color="bold red")<br>
+            time.sleep(2)<br>
+            horror_print("---BAD END2---",color="dim red")<br>
+            time.sleep(1)<br>
+<br>
+      elif choice2 == "2":<br>
+            horror_print("「清めよう!!!!!」",color="bright_white")<br>
+            time.sleep(1)<br>
+            horror_print("一晩中マリアちゃんの周りを塩で囲んだ",color="bright_white")<br>
+            time.sleep(1)<br>
+<br>
+            #選択肢３<br>
+            horror_print("\n選択肢:", color="dim white")<br>
+            time.sleep(2)<br>
+            horror_print("1.神社で供養を頼む",color="dim white")<br>
+            time.sleep(2)<br>
+            horror_print("2.壊す", color="dim white")<br>
+            time.sleep(2)<br>
+            horror_print("3.一緒にお出かけする",color="dim white")<br>
+            time.sleep(2)<br>
+        <br>
+            choice3 = input("番号を入力: ")<br>
+            if choice3 == "1":<br>
+             horror_print("「よし神社に行こう」", color="bright_white")<br>
+             time.sleep(2)<br>
+             horror_print("神社で供養を頼んだ。",color="bright_white")<br>
+             time.sleep(2)<br>
+             horror_print("しかし...マリアちゃんは無傷なまま家にいた",color="bold red")<br>
+             time.sleep(4)<br>
+             horror_print("「もうなんで供養してもらったはずなのに...!!」",color="bright_white")<br>
+             time.sleep(2)<br>
+             horror_print("あなたは人形を思わず投げつけてしまった。", color="bright_white")<br>
+             time.sleep(2)<br>
+             horror_print("...その夜",color="bright_white")<br>
+             time.sleep(3)<br>
+             horror_print("神社とアパートの一室が全焼",color="bright_white")<br>
+             time.sleep(3)<br>
+             horror_print("2人の焼死体だけが発見された",color="bold red")<br>
+             time.sleep(3)<br>
+             horror_print("---BAD END1.5---",color="dim red")<br>
+             time.sleep(2)<br>
+<br>
+            elif choice3 == "2":<br>
+             horror_print("「もう壊すしかない。」", color="bold red")<br>
+             time.sleep(3)<br>
+             horror_print("あなたは思いっきり壊した",color="bright_white")<br>
+             time.sleep(2)<br>
+             horror_print("マリアちゃんはバラバラになった。",color="bold red")<br>
+             time.sleep(3)<br>
+             horror_print("...「気味が悪い。」",color="bright_white")<br>
+             time.sleep(2)<br>
+             horror_print("数年後",color="bright_white")<br>
+             time.sleep(2)<br>
+             horror_print("あなたは充実した日々を過ごした", color="bright_white")<br>
+             time.sleep(2)<br>
+             horror_print("[22歳 死因:心臓麻痺]",color="bright_white")<br>
+             time.sleep(4)<br>
+             horror_print("---BAD END3---",color="dim red")<br>
+             time.sleep(2)<br>
+<br>
+            elif choice3 == "3":<br>
+             horror_print("「もうどうしたらいいかわからない。」",color="bright_white")<br>
+             time.sleep(2)<br>
+             horror_print("あなたは為す術がなく外に持ち出した。",color="bright_white")<br>
+             time.sleep(2)<br>
+             horror_print("???「かわいいお人形さん!!!」",color="bright_white")<br>
+             time.sleep(2)<br>
+             horror_print("「え?」",color="bright_white")<br>
+             time.sleep(2)<br>
+             horror_print("公園で遊んでいた少女が人形を欲しがっている。",color="bright_white")<br>
+             time.sleep(2)<br>
+             horror_print("放心状態だったあなたは人形を少女に渡してしまった。",color="bright_white")<br>
+             time.sleep(2)<br>
+             horror_print("少女「くれるの?」",color="bright_white")<br>
+             time.sleep(2)<br>
+             horror_print("「マリアちゃんっていうの。でも他のお人形にした方がいいよ。」",color="bright_white")<br>
+             time.sleep(2)<br>
+             horror_print("少女「この子がいいの!!!絶対大切にする!!!!」",color="bright_white")<br>
+             time.sleep(2)<br>
+             horror_print("---HAPPY END???---",color="dim white")<br>
+             time.sleep(2)<br>
+<br>
+      else:<br>
+            horror_print("errorrrrrrrrrrrr",color="bright_white")<br>
+            time.sleep(1)<br>
+<br>
+elif choice1 == "2":<br>
+            horror_print("\n「山に向かおう」",color="bright_white")<br>
+            time.sleep(1)<br>
+            horror_print(".........",color="bright_white")<br>
+            time.sleep(1)<br>
+            horror_print("あなたは山に向かいマリアちゃんを燃やした。",color="bold red")<br>
+            time.sleep(1)<br>
+            horror_print("「これで流石に来ないよね」",color="bright_white")<br>
+            time.sleep(1)<br>
+            horror_print("....「要ラナイノ? ワタシ要raナイ? ",color="dim red")<br>
+            time.sleep(2)<br>
+            horror_print("......ソレナラ、アナタ要ラナイ ",color="dim red")<br>
+            time.sleep(2)<br>
+            horror_print("翌日その山での大火事が報道された。",color="bright_white")<br>
+            time.sleep(1)<br>
+            horror_print("人間は発見されず... ",color="bright_white")<br>
+            time.sleep(1)<br>
+            horror_print("無傷の洋人形だけが発見された。",color="bright_white")<br>
+            time.sleep(3)<br>
+            horror_print("---BAD END1---",color="dim red")<br>
+            time.sleep(1)<br>
+elif choice1 == "3":<br>
+            horror_print("「やっぱ、一緒にいよう」",color="bright_white")<br>
+            time.sleep(1)<br>
+            horror_print("あなたはマリアちゃんを捨てずに置いておくことにした。",color="bright_white")<br>
+            time.sleep(1)<br>
+            horror_print("「...遊ンデ 一緒二遊ボウ」",color="dim red")<br>
+            time.sleep(3)<br>
+            horror_print("あなたはマリアちゃんと一緒に過ごすにつれて違和感を感じるようになった。何に対しても悲観的になっていったのだ。",color="bright_white")<br>
+            time.sleep(1)<br>
+            horror_print("次第に大学へも行かなくなった。",color="bright_white")<br>
+            time.sleep(1)<br>
+            horror_print("⚪︎月▲日アパートの一室から女子大学生の遺体が見つかった。",color="bold red")<br>
+            time.sleep(1)<br>
+            horror_print("---BAD END2---",color="dim red")<br>
+            time.sleep(1)<br>
+<br>       
+else:<br>
+            horror_print("エラー---~ー",color="bright_white")<br>
+            time.sleep(1)<br>
+<a href="./python/game.py">game code</a>
+
 <div style="display: flex; align-items: center; gap: 10px;">
 <img src="../images/無題1_20251006192902.jpg"width="40%"> <img src="../images/無題1_20251006191034.jpg"width="40%">
 </div>
-<br>
-<strong>htmlについて</strong><br>
-htmlとは<br>
-webページを制作するためのマークアップ言語のこと<br>
-:マークアップ言語とは、webページ内のテキスト情報の構成や役割をコンピュータが構造的に理解できるようにするためのもの<br>
-<br>
-htmlはタグ・要素・属性の3つで構成されている<br>
-タグ：テキストに意味を与える印<br>
-<img src="../images/無題2_20251006212618.PNG"width="30%"><br>
-要素：Webページを構成するテキスト情報のかたまりを指す用語<br>
-属性：個々のタグに特定の性質や動作を与える記述、属性を記述する際はそれに対する「属性値」も記載する<br>
-<img src="../images/無題3_20251006213637.PNG"width="30%">
-<br>
+
 参考サイト<br>
 <div class="video"><iframe width="350" height="200" src="https://www.youtube.com/embed/1l8oBEown8c?si=zgEZRpkCV1k3Vgwt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 <br>
