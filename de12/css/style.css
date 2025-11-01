@@ -55,7 +55,7 @@ span.blackback{
     text-align: center !important;
 }
 .git-page p,
-.git-page div {
+.git-page div{
     text-align: left !important;
     display: inline-block;
     width: 80%;
