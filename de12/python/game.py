@@ -74,11 +74,11 @@ if choice1 == "1":
             horror_print("「...遊ンデ 一緒二遊ボウ」",color="dim red")
             time.sleep(3)
             horror_print("あなたはマリアちゃんと一緒に過ごすにつれて違和感を感じるようになった。何に対しても悲観的になっていったのだ。",color="bright_white")
-            time.sleep(1)
+            time.sleep(4)
             horror_print("次第に大学へも行かなくなった。",color="bright_white")
             time.sleep(1)
             horror_print("⚪︎月▲日アパートの一室から女子大学生の遺体が見つかった。",color="bold red")
-            time.sleep(2)
+            time.sleep(3)
             horror_print("---BAD END2---",color="dim red")
             time.sleep(1)
 
@@ -98,8 +98,8 @@ if choice1 == "1":
             horror_print("3.一緒にお出かけする",color="dim white")
             time.sleep(2)
         
-
             choice3 = input("番号を入力: ")
+
             if choice3 == "1":
              horror_print("「よし神社に行こう」", color="bright_white")
              time.sleep(2)
@@ -129,11 +129,13 @@ if choice1 == "1":
              time.sleep(3)
              horror_print("...「気味が悪い。」",color="bright_white")
              time.sleep(2)
-             horror_print("数年後",color="bright_white")
+             horror_print("それから4年が経った",color="bright_white")
              time.sleep(2)
-             horror_print("あなたは充実した日々を過ごした", color="bright_white")
+             horror_print("その間あなたは充実した日々を過ごした", color="bright_white")
              time.sleep(2)
-             horror_print("[22歳 死因:心臓麻痺]",color="bright_white")
+             horror_print("「忘レタカ 忘レタオマエガ悪イ」", color="bold red")
+             time.sleep(3)
+             horror_print("[22歳 死因:原因不明の心臓麻痺]",color="bright_white")
              time.sleep(4)
              horror_print("---BAD END3---",color="dim red")
              time.sleep(2)
@@ -159,6 +161,10 @@ if choice1 == "1":
              time.sleep(2)
              horror_print("---HAPPY END???---",color="dim white")
              time.sleep(2)
+
+            else:
+                  horror_print("ERROR----",color="bright_white")
+                  time.sleep(1)
         
       else:
             horror_print("errorrrrrrrrrrrr",color="bright_white")
