@@ -9,34 +9,34 @@
   * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
   }
 
-  body.git-page {
-    text-align: center; /* 全体中央 */
-    background-size: cover;
-    background-position: center;
-    transition: background 1s ease-in-out;
-    background-image: url('../images/無題4_20251101221515.PNG');
+  body {
+    text-align: center;
+    height: 10vh; 
+    transition: background-image 1.5s ease-in-out; /* ふわっと切り替え */
+    background-image: url('./images/無題5_20251102001439.PNG'); /* 最初の背景 */
+    background-size: 100% auto;
+    background-repeat: repeat;
+    background-position: top;
+    background-attachment: scroll;
   }
 
   .content {
-    display: inline-block; /* 中身を中央に */
-    text-align: left; /* ←文字は左揃え */
+    display: inline-block;
+    text-align: left;
     width: 80%;
     max-width: 1000px;
     margin-top: 60px;
-    padding: 20px 30px;
-    border-radius: 20px;
+    padding-top: 50px;
+    color: #fff;
   }
 
-  h1 {
+  h1{
+    text-indent: 0em;
     text-align: center;
-    margin-bottom: 20px;
   }
 </style>
-
-<link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="git-page">
@@ -51,6 +51,15 @@
     <br>
     <strong>ポイント</strong>：コードのprintの部分をhorror_printにしたことや文字の色、速度を変えたことでホラーゲーム感が増した点<br>
     <br>
+    <strong>⚠️注意点⚠️</strong>：visual studio codeでこのゲームをプレイするにはhorror_printを使用できるようにするため、ターミナルで pip install rich を実行してください!<br>
+    <br>
+    エンドは5つ<br>
+    ・BAD END1  ・BAD END1.5  ・BAD END2  ・BAD END3   ・HAPPY END???<br>
+    <br>
+    <strong>反省点</strong>：選択肢を選ぶ物語系のゲームは長くよく作り込まれているからこそ面白いと感じるものになるのだろうと思った。今回作成したゲームはエンドがすぐ出てきてしまったりする部分が面白さを半減させてしまったため、時間をかけてより面白いものを作っていきたい。また、初めて使うコードが非常に多くあり今までの課題より大幅に時間がかかってしまったので早く多くのコードに触れ、慣れていきたいと感じた。
+    <br>
+    <div class="video"><iframe width="350" height="200" src="https://youtu.be/mkJ3CzWsD6w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+    <div class="video"><iframe width="350" height="200" src="https://youtu.be/x3ntyKilS_U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
     <br>
     <strong>code</strong><br>
     #題名<br>
@@ -246,18 +255,20 @@
             time.sleep(1)<br>
     <a href="./python/game.py">game code</a>
   </div>
-
   <script>
-    // スクロールで背景画像切り替え
-    window.addEventListener('scroll', function() {
-      const scrollY = window.scrollY;
-      const windowHeight = window.innerHeight;
+    const body = document.body;
 
-      // ページの中ほどくらいで切り替わる
-      if (scrollY > windowHeight / 2) {
-        document.body.style.backgroundImage = "url('../images/無題4_20251101221515.PNG')";
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY;
+      const totalHeight = document.body.scrollHeight - window.innerHeight;
+      const halfway = totalHeight / 5;
+
+      if (scrollY > halfway) {
+        // 下半分に来たら色違いに切り替え
+        body.style.backgroundImage = "url('./images/IMG_4378.PNG')";
       } else {
-        document.body.style.backgroundImage = "url('../images/IMG_4378.PNG')";
+        // 上半分では最初の背景
+        body.style.backgroundImage = "url('./images/無題5_20251102001439.PNG')";
       }
     });
   </script>
