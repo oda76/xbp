@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    
+    <title>おだ 第2回</title>
+    
+     <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+<body class="git-page">
+    <h1>ardinoでオルゴール作り</h1>
+    
+    <div>
+<strong>ardino</strong><br>
+ardinoとモーター、そしてLEDを使用してオルゴールのようにバレリーナが回るように作成した。<br>
+<br>
+<strong></strong><br>
+<img src="../de34/images/barerina.HEIC"width="40%"><br>
+<img src="../de34/images/barerina3.HEIC"width="40%"><br>
+<br>
+code<br>
+#include <Adafruit_NeoPixel.h>
+
+#define PIN 11
+#define NUMPIXELS 5
+
+const int SENSOR = A1;
+const int DIR = 8;
+const int STEP = 9;
+
+int threshold = 200;
+int brightness = 50;
+
+Adafruit_NeoPixel pixels(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
+
+void setup() {
+  Serial.begin(9600);
+
+  pinMode(DIR, OUTPUT);
+  pinMode(STEP, OUTPUT);
+
+  pixels.begin();
+  pixels.setBrightness(brightness);
+
+  digitalWrite(DIR, HIGH); // 最初に回転方向固定
+}
+
+void loop() {
+  int val = analogRead(SENSOR);
+  Serial.println(val);
+
+  if (val > threshold) {
+    // 暗いときに光る
+
+    // NeoPixel点灯
+    pixels.clear();
+    for (int i = 0; i < NUMPIXELS; i++) {
+      pixels.setPixelColor(i, pixels.Color(100, 255, 100));
+    }
+    pixels.show();
+
+    // ずっとゆっくり回す
+    digitalWrite(STEP, HIGH);
+    delayMicroseconds(3000);
+    digitalWrite(STEP, LOW);
+    delayMicroseconds(3000);
+
+  } else {
+    pixels.clear();
+    pixels.show();
+  }
+
+  delay(10);
+}<br>
+完成品動画<br>
+<div class="video"><iframe width="600" height="400" src="https://www.youtube.com/embed/https://youtube.com/shorts/6GK7bgrVle8?si=Lrx3RmcyRmaHHEy1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>"></iframe></div>
+<br>
+
+    </div>
+
+</body>
+</html>
